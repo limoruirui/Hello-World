@@ -1,5 +1,7 @@
-###问卷星param参数解密 自测2022.3.20可用
-### 入口函数为get_param(rn, activetyId, startTime) 三个参数都是在同一个html文件里 这个应该很多教程都有说 特别是rn是计算jqsign的
+/*
+问卷星param参数解密 自测2022.3.20可用
+入口函数为get_param(rn, activetyId, startTime) 三个参数都是在同一个html文件里 这个应该很多教程都有说 特别是rn是计算jqsign的
+*/
 var window = this;
 var navigator = this;
 var document = this;
