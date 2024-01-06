@@ -443,6 +443,7 @@ window = {};
         q = new BigInt();
         r = x;
 
+        
 // Normalize Y.
         var t = Math.ceil(tb / bitsPerDigit) - 1;
         var lambda = 0;
@@ -692,6 +693,6 @@ function encrypt_phone(phone) {
     var modulus = "00A828DB9D028A4B9FC017821C119DFFB8537ECEF7F91D4BC06DB06CC8B4E6B2D0A949B66A86782D23AA5AA847312D91BE07DC1430C1A6F6DE01A3D98474FE4511AAB7E4E709045B61F17D0DC4E34FB4BE0FF32A04E442EEE6B326D97E11AE8F23BF09926BF05AAF65DE34BB90DEBDCEE475D0832B79586B4B02DEED2FC3EA10B3";
     var exponent = "010001";
     var key = window.RSAUtils.getKeyPair(exponent, '', modulus);
-    phoneNum = window.RSAUtils.encryptedString(key, phone);
-    return phoneNum
+    resultText = window.RSAUtils.encryptedString(key, phone);
+    return resultText
 }
