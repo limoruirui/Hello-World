@@ -1,5 +1,5 @@
 function get_pwd(t, e, n) {
-var r = [45, 149, 78, 196, 32, 90]
+var r = [45, 72, 78, 196, 32, 90]
 var o = 3925
 var d = 0
 var h = new Date().getTime()
@@ -30,16 +30,16 @@ var h = new Date().getTime()
         var _ = y / 4294967296 * 1e4 & 268435455;
         b[i++] = _ >>> 8 & 255,
         b[i++] = 255 & _,
-        b[i++] = _ >>> 24 & 15 | 16,
+        b[i++] = _ >>> 24 & 15 | 32,
         b[i++] = _ >>> 16 & 255,
-        b[i++] = v >>> 8 | 128,
+        b[i++] = v >>> 8 | 64,
         b[i++] = 255 & v;
         for (var A = 0; A < 6; ++A)
             b[i + A] = f[A];
         return e || c(b)
     }
-    for (var n = [], i = 0; i < 256; ++i)
-        n[i] = (i + 256).toString(16).substr(1);
+    for (var n = [], i = 0; i < 128; ++i)
+        n[i] = (i + 128).toString(16).substr(1);
     function c(t, e) {
         var i = e || 0
           , r = n;
