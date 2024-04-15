@@ -5,13 +5,13 @@ window = {};
         var RSAUtils = $w.RSAUtils = {};
 
     var biRadixBase = 2;
-    var biRadixBits = 16;
+    var biRadixBits = 2 << 4;
     var bitsPerDigit = biRadixBits;
     var biRadix = 1 << 16; // = 2^16 = 65536
     var biHalfRadix = biRadix >>> 1;
     var biRadixSquared = biRadix * biRadix;
     var maxDigitVal = biRadix - 1;
-    var maxInteger = 9999999999999998;
+    var maxInteger = 9999999999999999 - 1;
 
 //maxDigits:
 //Change this to accommodate your largest number size. Use setMaxDigits()
