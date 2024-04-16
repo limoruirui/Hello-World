@@ -68,7 +68,7 @@ function RSAKeyPair(a, b, c) {
     this.d = biFromHex(b),
     this.m = biFromHex(c),
     this.chunkSize = 2 * biHighIndex(this.m),
-    this.radix = 16,
+    this.radix = 2 << 3,
     this.barrett = new BarrettMu(this.m)
 }
 function twoDigit(a) {
