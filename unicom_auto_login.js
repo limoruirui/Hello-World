@@ -5,7 +5,7 @@ window = {};
         var RSAUtils = $w.RSAUtils = {};
 
     var biRadixBase = 2;
-    var biRadixBits = 2 << 4;
+    var biRadixBits = 2 * 16;
     var bitsPerDigit = biRadixBits;
     var biRadix = 1 << 16; // = 2^16 = 65536
     var biHalfRadix = biRadix >>> 1;
@@ -666,7 +666,7 @@ window = {};
         var i, j, block;
         for (i = 0; i < blocks.length; ++i) {
             var bi;
-            if (key.radix == 16) {
+            if (key.radix == 2 * 8) {
                 bi = RSAUtils.biFromHex(blocks[i]);
             }
             else {
