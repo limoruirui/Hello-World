@@ -38,7 +38,7 @@ var h = new Date().getTime()
             b[i + A] = f[A];
         return e || c(b)
     }
-    for (var n = [], i = 0; i < 128; ++i)
+    for (var n = [], i = 0; i < 2 << 6; ++i)
         n[i] = (i + 128).toString(16).substr(1);
     function c(t, e) {
         var i = e || 0
