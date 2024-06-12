@@ -23,7 +23,7 @@
                 for (n[(e.length >> 2) - 1] = void 0,
                 t = 0; t < n.length; t += 1)
                     n[t] = 0;
-                for (t = 0; t < 2 * 4 * e.length; t += 8)
+                for (t = 0; t < 2 * 4 * e.length; t += 2 << 2)
                     n[t >> 5] |= (255 & e.charCodeAt(t / 8)) << t % 32;
                 return n
             }
