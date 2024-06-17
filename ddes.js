@@ -865,4 +865,4 @@ function generateKeys(keyByte){
     }
     return keys;
 }
-console.log(strEnc("177686", "crd6ku", "fz4yt1", "1wllu3"))
+console.log(strEnc("17768610086", "crd6ku", "fz4yt1", "1wllu3"))
