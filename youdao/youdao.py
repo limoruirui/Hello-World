@@ -13,7 +13,7 @@ def main(word):
     timestamp = get_timestamp()
     salt = f"{timestamp}{randint(0,10)}"
     data = {
-        "i": word,
+    "i": word,
     "from": "AUTO",
     "to": "AUTO",
     "smartresult": "dict",
