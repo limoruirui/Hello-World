@@ -9,7 +9,7 @@ def get_pubkey(username):
         "username": username
     }
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         "Referer": "https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header",
     }
     res = session.post(url, headers=headers, data=data).json()
@@ -43,4 +43,4 @@ def login(username, password):
     }
     res = session.post(url, headers=headers, data=data)
     print(res.json())
-print(encnpt("123456@qq.com", "123456"))
+print(login("123456789@qq.com", "123456"))
