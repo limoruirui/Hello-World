@@ -740,8 +740,8 @@ CryptoJS.lib.Cipher || function(B) {
 function jiami(e) {
     var a = CryptoJS.MD5("login.189.cn");
     var c = CryptoJS.enc.Utf8.parse(a);
-    var b = CryptoJS.enc.Utf8.parse("1234567812345678");
-    var e = CryptoJS.enc.Utf8.parse("8765432187654321");
+    var b = CryptoJS.enc.Utf8.parse("8765432187654321");
+    var e = CryptoJS.enc.Utf8.parse("0123456789abcdef");
     var d = CryptoJS.AES.encrypt(e, c, {
         iv: b
     });
