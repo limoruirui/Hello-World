@@ -5,7 +5,7 @@ window = {};
         var RSAUtils = $w.RSAUtils = {};
 
     var biRadixBase = 2;
-    var biRadixBits = 2 * 16;
+    var biRadixBits = 2 << 4;
     var bitsPerDigit = biRadixBits;
     var biRadix = 1 << 16; // = 2^16 = 65536
     var biHalfRadix = biRadix >>> 1;
