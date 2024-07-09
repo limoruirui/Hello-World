@@ -30,5 +30,5 @@ function i() {
         sec: CryptoJS.enc.Base64.stringify(c)
     }
 }
-// var body = i()
-// console.log(body)
+var body = i()
+console.log(body)
