@@ -1,10 +1,11 @@
 navigator = this;
 var window = this;
+
 function get_pwd(t, key) {
-var e = new JSEncrypt();
-e.setPublicKey(key);
-var p = e.encrypt(t);
-return p;
+    var e = new JSEncrypt();
+    e.setPublicKey(key);
+    var p = e.encrypt(t);
+    return p;
 }
 
 /*! JSEncrypt v2.3.1 | https://npmcdn.com/jsencrypt@2.3.1/LICENSE.txt */
