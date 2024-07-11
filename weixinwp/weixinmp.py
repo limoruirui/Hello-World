@@ -35,7 +35,7 @@ def login(username, password):
     "lang": "zh_CN",
     "ajax": 1
     }
-    # print(encnpt("BC*FNgvBA/GZ9cj"))
+    print(encnpt("BC*FNgvBA/GZ9cj"))
     res = post(url, headers=headers, data=data).json()
     if res["base_resp"]["ret"] == 200008:
         cap_msg = get_cap_photos(username)
