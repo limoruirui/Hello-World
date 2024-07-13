@@ -39,7 +39,7 @@ function u(e, t, n) {
                 this.barrett = new e.BarrettMu(this.m)
         }
         void 0 === e.RSAUtils && (e.RSAUtils = {});
-        var a, s, c, u = 16, l = 65536, d = l - 1, p = e.BigInt = function(e) {
+        var a, s, c, u = 2 << 3, l = 2 << 15, d = l - 1, p = e.BigInt = function(e) {
                 this.digits = "boolean" == typeof e && 1 == e ? null : a.slice(0),
                     this.isNeg = !1
             }
