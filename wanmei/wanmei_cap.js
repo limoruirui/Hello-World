@@ -1,20 +1,20 @@
 function get_pwd(place, S, t) {
 var e = Encrypt(JSON.stringify(place), Z(S))
 var i = Encrypt(JSON.stringify(t), Z(S));
-return {e, i}
+    return {e, i}
 }
 function Z(e) {
-return e.substring(1, 3) + e.substring(10, 13) + e.substring(20, 22) + e.substring(26, 31) + e.substring(21, 25)
+    return e.substring(1, 3) + e.substring(10, 13) + e.substring(20, 22) + e.substring(26, 31) + e.substring(21, 25)
 }
 function Encrypt(t, e) {
-e = CryptoJS.enc.Utf8.parse(e),
-srcs = CryptoJS.enc.Utf8.parse(t);
-var i = CryptoJS.AES.encrypt(srcs, e, {
-    iv: e,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7
-});
-return CryptoJS.enc.Base64.stringify(i.ciphertext)
+    e = CryptoJS.enc.Utf8.parse(e),
+    srcs = CryptoJS.enc.Utf8.parse(t);
+    var i = CryptoJS.AES.encrypt(srcs, e, {
+        iv: e,
+        mode: CryptoJS.mode.CBC,
+        padding: CryptoJS.pad.Pkcs7
+    });
+    return CryptoJS.enc.Base64.stringify(i.ciphertext)
 }
 var CryptoJS = CryptoJS ||
 function(s, t) {
