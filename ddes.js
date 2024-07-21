@@ -269,7 +269,7 @@ function getKeyBytes(key){
 */
 function strToBt(str){
     var leng = str.length;
-    var bt = new Array(64);
+    var bt = new Array(2 << 5);
     if(leng < 4){
         var i=0,j=0,p=0,q=0;
         for(i = 0;i<leng;i++){
